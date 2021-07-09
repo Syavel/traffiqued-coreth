@@ -897,6 +897,7 @@ func (vm *VM) buildEarly() bool {
 // If it should be called back again, it returns the timeout duration at
 // which it should be called again.
 func (vm *VM) buildBlockTwoStageTimer() (time.Duration, bool) {
+	log.Info("buildBlockTwoStageTimer() was called !")
 	vm.buildBlockLock.Lock()
 	defer vm.buildBlockLock.Unlock()
 
