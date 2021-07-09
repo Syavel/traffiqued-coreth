@@ -75,8 +75,8 @@ var (
 )
 
 const (
-	minBlockTime = 2 * time.Second
-	maxBlockTime = 3 * time.Second
+	minBlockTime = 0 * time.Second
+	maxBlockTime = 0 * time.Second
 	// Max time from current time allowed for blocks, before they're considered future blocks
 	// and fail verification
 	maxFutureBlockTime   = 10 * time.Second
