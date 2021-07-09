@@ -369,6 +369,7 @@ func (pool *TxPool) loop() {
 
 			if pending != prevPending || queued != prevQueued || stales != prevStales {
 				log.Debug("Transaction pool status report", "executable", pending, "queued", queued, "stales", stales)
+				log.Debug(pending, "Transaction needs to create a block here")
 				prevPending, prevQueued, prevStales = pending, queued, stales
 			}
 
